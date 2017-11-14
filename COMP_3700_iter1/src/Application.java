@@ -28,6 +28,8 @@ public class Application {
 
     private  OrderView orderView;
 
+    private LoginView loginView;
+
     private OrderController orderController;
 
     public MainScreen getMainScreen() {
@@ -42,9 +44,13 @@ public class Application {
 
     public OrderView getOrderView() { return  orderView;  }
 
+    public LoginView getLoginView() { return loginView; }
+
     private CheckoutController checkoutController;
 
     private ProductController productController;
+
+    private LoginController loginController;
 
     public ProductController getProductController() {
         return productController;
@@ -53,6 +59,8 @@ public class Application {
     public CheckoutController getCheckoutController() {
         return checkoutController;
     }
+
+    public LoginController getLoginController() { return loginController; }
 
     public DataAdapter getDataAdapter() {
         return dataAdapter;
@@ -86,11 +94,15 @@ public class Application {
 
         orderView = new OrderView();
 
+        loginView = new LoginView();
+
         orderController = new OrderController(orderView);
 
         checkoutController = new CheckoutController(checkoutView, dataAdapter, orderController);
 
         productController = new ProductController(productView, dataAdapter);
+
+        loginController = new LoginController();
 
         mainScreen = new MainScreen();
 

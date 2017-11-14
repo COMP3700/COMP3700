@@ -7,6 +7,7 @@ public class MainScreen extends JFrame {
 
     private JButton btnCheckout = new JButton("Checkout");
     private JButton btnManage   = new JButton("Manage Product");
+    private JButton btnLogin = new JButton("Login");
 
     public MainScreen() {
         this.setLayout(new BoxLayout(this.getContentPane(), BoxLayout.Y_AXIS));
@@ -16,6 +17,7 @@ public class MainScreen extends JFrame {
 
         btnManage.setPreferredSize(new Dimension(120, 50));
         btnCheckout.setPreferredSize(new Dimension(120, 50));
+        btnLogin.setPreferredSize(new Dimension(120,50));
 
 
         JLabel title = new JLabel("Store Management System");
@@ -27,6 +29,7 @@ public class MainScreen extends JFrame {
         JPanel panelButton = new JPanel();
         panelButton.add(btnCheckout);
         panelButton.add(btnManage);
+        panelButton.add(btnLogin);
 
         this.getContentPane().add(panelButton);
 
@@ -34,6 +37,13 @@ public class MainScreen extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 Application.getInstance().getCheckoutView().setVisible(true);
                 Application.getInstance().getOrderView().setVisible(true);
+            }
+        });
+
+        btnLogin.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Application.getInstance().getLoginView().setVisible(true);
             }
         });
 
