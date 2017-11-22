@@ -30,7 +30,11 @@ public class Application {
 
     private LoginView loginView;
 
+    private LookupView lookupView;
+
     private OrderController orderController;
+
+    private LookupController lookupController;
 
     public MainScreen getMainScreen() {
         return mainScreen;
@@ -45,6 +49,10 @@ public class Application {
     public OrderView getOrderView() { return  orderView;  }
 
     public LoginView getLoginView() { return loginView; }
+
+    public LookupView getLookupView() {
+        return lookupView;
+    }
 
     private CheckoutController checkoutController;
 
@@ -96,6 +104,8 @@ public class Application {
 
         loginView = new LoginView();
 
+        lookupView = new LookupView();
+
         orderController = new OrderController(orderView);
 
         checkoutController = new CheckoutController(checkoutView, dataAdapter, orderController);
@@ -103,6 +113,8 @@ public class Application {
         productController = new ProductController(productView, dataAdapter);
 
         loginController = new LoginController();
+
+        lookupController = new LookupController();
 
         mainScreen = new MainScreen();
 

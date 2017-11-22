@@ -13,10 +13,6 @@ public class LoginView extends JFrame {
         this.setSize(500, 200);
         this.setLocation(300,250);
 
-        JPanel panelButton = new JPanel();
-        panelButton.add(btnLogin);
-        this.getContentPane().add(panelButton);
-
         JPanel panelUsername = new JPanel();
         panelUsername.add(new JLabel("Username: "));
         panelUsername.add(txtUsername);
@@ -28,6 +24,10 @@ public class LoginView extends JFrame {
         panelPassword.add(txtPassword);
         this.getContentPane().add(panelPassword);
         txtPassword.setEnabled(true);
+
+        JPanel panelButton = new JPanel();
+        panelButton.add(btnLogin);
+        this.getContentPane().add(panelButton);
     }
 
     public JButton getBtnLogin() {
