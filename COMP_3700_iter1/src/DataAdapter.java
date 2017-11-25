@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.sql.*;
 
 public class DataAdapter {
@@ -94,5 +95,34 @@ public class DataAdapter {
             System.out.println("Database access error!");
             e.printStackTrace();
         }
+    }
+
+    public Employee loginUser(String userName, String password) {
+        try {
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM Employees WHERE UserName = ? AND EmployeePassword = ?");
+            statement.setString(1, userName);
+            statement.setString(2, password);
+
+            ResultSet resultSet = statement.executeQuery();
+
+            if (resultSet.next()) { // this user exists, load menu
+                Employee employee = new Employee();
+                employee.setEmployeeID(resultSet.getInt(1));
+                employee.setUsername(resultSet.getString(2));
+                employee.setName(resultSet.getString(3));
+                employee.setPassword(resultSet.getString(4));
+                employee.setIsManager(resultSet.getInt(5));
+                return employee;
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Employee login! Please try again.");
+
+            }
+
+        } catch (SQLException e) {
+            System.out.println("Database access error!");
+            e.printStackTrace();
+        }
+
+        return null;
     }
 }

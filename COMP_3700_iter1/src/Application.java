@@ -20,13 +20,15 @@ public class Application {
 
     private DataAdapter dataAdapter;
 
+    private Employee employee;
+
     private ProductView productView;
 
     private CheckoutView checkoutView;
 
     private MainScreen mainScreen;
 
-    private  OrderView orderView;
+    private OrderView orderView;
 
     private LoginView loginView;
 
@@ -74,6 +76,13 @@ public class Application {
         return dataAdapter;
     }
 
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
+    public Employee getEmployee() {
+        return employee;
+    }
 
     private Application() {
         // create SQLite database connection here!
@@ -112,7 +121,7 @@ public class Application {
 
         productController = new ProductController(productView, dataAdapter);
 
-        loginController = new LoginController();
+        loginController = new LoginController(loginView, dataAdapter);
 
         lookupController = new LookupController();
 
@@ -124,6 +133,6 @@ public class Application {
 
 
     public static void main(String[] args) {
-        Application.getInstance().getMainScreen().setVisible(true);
+        Application.getInstance().getLoginView().setVisible(true);
     }
 }
