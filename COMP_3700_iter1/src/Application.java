@@ -22,6 +22,14 @@ public class Application {
 
     private Employee employee;
 
+    private int largestEmployeeID;
+
+    public int getLargestEmployeeID() {
+        return largestEmployeeID;
+    }
+
+    //Views
+
     private ProductView productView;
 
     private CheckoutView checkoutView;
@@ -34,9 +42,7 @@ public class Application {
 
     private LookupView lookupView;
 
-    private OrderController orderController;
-
-    private LookupController lookupController;
+    private AddUserView addUserView;
 
     public MainScreen getMainScreen() {
         return mainScreen;
@@ -56,11 +62,27 @@ public class Application {
         return lookupView;
     }
 
+    public AddUserView getAddUserView() {
+        return addUserView;
+    }
+
+    public void setMainScreen(MainScreen mainScreen) {
+        this.mainScreen = mainScreen;
+    }
+
+    //Controllers
+
+    private OrderController orderController;
+
+    private LookupController lookupController;
+
     private CheckoutController checkoutController;
 
     private ProductController productController;
 
     private LoginController loginController;
+
+    private AddUserController addUserController;
 
     public ProductController getProductController() {
         return productController;
@@ -72,6 +94,10 @@ public class Application {
 
     public LoginController getLoginController() { return loginController; }
 
+    public AddUserController getAddUserController() {
+        return addUserController;
+    }
+
     public DataAdapter getDataAdapter() {
         return dataAdapter;
     }
@@ -82,6 +108,11 @@ public class Application {
 
     public Employee getEmployee() {
         return employee;
+    }
+
+    public void updateLargestEmployeeID() {
+        largestEmployeeID = dataAdapter.getLargestEmployeeID() + 1;
+
     }
 
     private Application() {
@@ -103,7 +134,9 @@ public class Application {
         // Create data adapter here!
         dataAdapter = new DataAdapter(connection);
 
-        // Create the Product View and Controller here!
+        largestEmployeeID = dataAdapter.getLargestEmployeeID() + 1;
+
+        // Views
 
         productView = new ProductView();
 
@@ -115,6 +148,10 @@ public class Application {
 
         lookupView = new LookupView();
 
+        addUserView = new AddUserView();
+
+        //Controllers
+
         orderController = new OrderController(orderView);
 
         checkoutController = new CheckoutController(checkoutView, dataAdapter, orderController);
@@ -125,9 +162,9 @@ public class Application {
 
         lookupController = new LookupController();
 
+        addUserController = new AddUserController(addUserView, dataAdapter);
+
         mainScreen = new MainScreen();
-
-
 
     }
 

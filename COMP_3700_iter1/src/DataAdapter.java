@@ -125,4 +125,49 @@ public class DataAdapter {
 
         return null;
     }
+
+
+    public void addUser(Employee employee) {
+        try {
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM Employees WHERE UserName = ?");
+            statement.setString(1, employee.getUsername());
+
+            ResultSet resultSet = statement.executeQuery();
+
+            if (resultSet.next()) { // this employee already exists, change user name
+                JOptionPane.showMessageDialog(null, "Employee Username already exists! Please try again.");
+            }
+            else { // this employee does not exist, add user to database
+                statement = connection.prepareStatement("INSERT INTO Employees VALUES (?, ?, ?, ?, ?)");
+                statement.setString(2, employee.getUsername());
+                statement.setString(3, employee.getName());
+                statement.setString(4, employee.getPassword());
+                statement.setInt(5, employee.getIsManager());
+                statement.setInt(1, employee.getEmployeeID());
+                JOptionPane.showMessageDialog(null, "Employee Successfully Added.");
+
+            }
+            statement.execute();
+            Application.getInstance().updateLargestEmployeeID();
+            resultSet.close();
+            statement.close();
+
+        } catch (SQLException e) {
+            System.out.println("Database access error!");
+            e.printStackTrace();
+        }
+    }
+
+
+    public int getLargestEmployeeID() {
+        try {
+            PreparedStatement statement = connection.prepareStatement("SELECT MAX(EmployeeID) FROM Employees");
+            ResultSet resultSet = statement.executeQuery();
+            return resultSet.getInt(1);
+        } catch (SQLException e) {
+            System.out.println("Database error! Could not get EmployeeID");
+        }
+
+        return -1;
+    }
 }

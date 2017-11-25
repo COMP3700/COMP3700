@@ -12,18 +12,20 @@ public class MainScreen extends JFrame {
     private JButton btnLookupOrder = new JButton("Lookup Orders");
     private JButton btnAddUser = new JButton("Add User");
     private MainScreen mainScreen;
+    private int isManager = 0;
 
     public MainScreen() {
         this.mainScreen = this;
         this.setLayout(new BoxLayout(this.getContentPane(), BoxLayout.Y_AXIS));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(450, 300);
+        this.setSize(450, 350);
         this.setLocationRelativeTo(null);
 
         btnManage.setPreferredSize(new Dimension(150, 50));
         btnCheckout.setPreferredSize(new Dimension(150, 50));
         btnSignOut.setPreferredSize(new Dimension(150,50));
         btnLookupOrder.setPreferredSize(new Dimension(150, 50));
+        btnAddUser.setPreferredSize(new Dimension(150, 50));
 
 
         JLabel title = new JLabel("Store Management System");
@@ -59,22 +61,39 @@ public class MainScreen extends JFrame {
 
         btnManage.addActionListener(new ActionListener() { // when controller is simple, we can declare it on the fly
             public void actionPerformed(ActionEvent e) {
-                Application.getInstance().getProductView().setVisible(true);
+                if (isManager == 1) {
+                    Application.getInstance().getProductView().setVisible(true);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Manager Option Only");
+                }
+
 
             }
         });
 
         btnLookupOrder.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                Application.getInstance().getLookupView().setVisible(true);
+                if (isManager == 1) {
+                    Application.getInstance().getLookupView().setVisible(true);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Manager Option Only");
+                }
             }
         });
 
         btnAddUser.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                //Load adding a user to the system
+                if (isManager == 1) {
+                    Application.getInstance().getAddUserView().setVisible(true);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Manager Option Only");
+                }
             }
         });
+    }
+
+    public void setIsManager(int num) {
+        this.isManager = num;
     }
 
 

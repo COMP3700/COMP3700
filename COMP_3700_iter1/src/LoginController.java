@@ -1,17 +1,11 @@
-import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowEvent;
 
 public class LoginController implements ActionListener{
 
     private LoginView loginView;
     private DataAdapter dataAdapter;
-
-    private JButton btnCheckout = new JButton("Checkout");
-    private JButton btnManage   = new JButton("Manage Product");
-    private JButton btnLookupOrder = new JButton("Lookup Orders");
+    private Employee emp;
 
     public LoginController(LoginView loginView, DataAdapter dataAdapter) {
         this.loginView = loginView;
@@ -21,9 +15,13 @@ public class LoginController implements ActionListener{
 
     public void actionPerformed(ActionEvent e) {
         Application.getInstance().setEmployee(dataAdapter.loginUser(loginView.getTxtUsername().getText(), loginView.getTxtPassword().getText()));
+       emp = dataAdapter.loginUser(loginView.getTxtUsername().getText(), loginView.getTxtPassword().getText());
         if (Application.getInstance().getEmployee() != null) {
-            Application.getInstance().getMainScreen().setVisible(true);
             this.loginView.dispose();
+            Application.getInstance().getMainScreen().setIsManager(emp.getIsManager());
+            Application.getInstance().getMainScreen().setTitle(emp.getName());
+            Application.getInstance().getMainScreen().setVisible(true);
+
         }
     }
 }
