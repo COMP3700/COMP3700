@@ -18,7 +18,6 @@ public class LoginController implements ActionListener{
        emp = dataAdapter.loginUser(loginView.getTxtUsername().getText(), loginView.getTxtPassword().getText());
         if (Application.getInstance().getEmployee() != null) {
             this.loginView.dispose();
-            Application.getInstance().getMainScreen().setIsManager(emp.getIsManager());
             Application.getInstance().getMainScreen().setTitle(emp.getName());
             Application.getInstance().getMainScreen().setVisible(true);
 

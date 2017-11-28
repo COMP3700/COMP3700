@@ -11,6 +11,7 @@ public class MainScreen extends JFrame {
     private JButton btnSignOut = new JButton("Sign Out");
     private JButton btnLookupOrder = new JButton("Lookup Orders");
     private JButton btnAddUser = new JButton("Add User");
+    private JButton btnProfile = new JButton("Profile");
     private MainScreen mainScreen;
     private int isManager = 0;
 
@@ -26,6 +27,7 @@ public class MainScreen extends JFrame {
         btnSignOut.setPreferredSize(new Dimension(150,50));
         btnLookupOrder.setPreferredSize(new Dimension(150, 50));
         btnAddUser.setPreferredSize(new Dimension(150, 50));
+        btnProfile.setPreferredSize((new Dimension(150, 50)));
 
 
         JLabel title = new JLabel("Store Management System");
@@ -40,6 +42,7 @@ public class MainScreen extends JFrame {
         panelButton.add(btnLookupOrder);
         panelButton.add(btnAddUser);
         panelButton.add(btnSignOut);
+        panelButton.add(btnProfile);
 
         this.getContentPane().add(panelButton);
 
@@ -90,11 +93,11 @@ public class MainScreen extends JFrame {
                 }
             }
         });
+
+        btnProfile.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                Application.getInstance().getProfileView().setVisible(true);
+            }
+        });
     }
-
-    public void setIsManager(int num) {
-        this.isManager = num;
-    }
-
-
 }

@@ -126,6 +126,32 @@ public class DataAdapter {
         return null;
     }
 
+    public void updatePassword(String newPassword, Employee employee) {
+        try {
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM Employees WHERE EmployeeID = ?");
+            statement.setInt(1, employee.getEmployeeID());
+            ResultSet resultSet = statement.executeQuery();
+
+            if (resultSet.next()) {
+                statement = connection.prepareStatement("UPDATE Employees SET EmployeePassword = ? WHERE EmployeeID = ?");
+                statement.setString(1, newPassword);
+                statement.setInt(2, employee.getEmployeeID());
+
+            } else {
+                JOptionPane.showMessageDialog(null, "Employee Not found in database. Cannot update password");
+            }
+
+            statement.execute();
+
+            resultSet.close();
+            statement.close();
+            JOptionPane.showMessageDialog(null, "Password Updated");
+
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }
+
 
     public void addUser(Employee employee) {
         try {

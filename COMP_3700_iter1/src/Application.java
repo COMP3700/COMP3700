@@ -44,6 +44,8 @@ public class Application {
 
     private AddUserView addUserView;
 
+    private ProfileView profileView;
+
     public MainScreen getMainScreen() {
         return mainScreen;
     }
@@ -66,6 +68,10 @@ public class Application {
         return addUserView;
     }
 
+    public ProfileView getProfileView() {
+        return profileView;
+    }
+
     public void setMainScreen(MainScreen mainScreen) {
         this.mainScreen = mainScreen;
     }
@@ -84,6 +90,8 @@ public class Application {
 
     private AddUserController addUserController;
 
+    private ProfileController profileController;
+
     public ProductController getProductController() {
         return productController;
     }
@@ -96,6 +104,10 @@ public class Application {
 
     public AddUserController getAddUserController() {
         return addUserController;
+    }
+
+    public ProfileController getProfileContrller() {
+        return profileController;
     }
 
     public DataAdapter getDataAdapter() {
@@ -150,6 +162,8 @@ public class Application {
 
         addUserView = new AddUserView();
 
+        profileView = new ProfileView();
+
         //Controllers
 
         orderController = new OrderController(orderView);
@@ -163,6 +177,8 @@ public class Application {
         lookupController = new LookupController();
 
         addUserController = new AddUserController(addUserView, dataAdapter);
+
+        profileController = new ProfileController(profileView);
 
         mainScreen = new MainScreen();
 
