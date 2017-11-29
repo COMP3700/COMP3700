@@ -1,5 +1,9 @@
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
 public class ProfileView extends JFrame {
 
@@ -8,6 +12,8 @@ public class ProfileView extends JFrame {
     private JButton btnUpdatePass = new JButton("Update Password");
     private JButton btnUpdatePhoto = new JButton("Change Picture");
 
+
+    BufferedImage profImg = null;
     private ImageIcon profPic = new ImageIcon();
     private JLabel profPicLabel = new JLabel(profPic);
 
@@ -34,10 +40,19 @@ public class ProfileView extends JFrame {
     }
 
     public void setProfPic(String profPic) {
+
+        try {
+            this.profImg = ImageIO.read(new File(profPic));
+            Image dimg = profImg.getScaledInstance(100,100, Image.SCALE_SMOOTH);
+            this.profPic = new ImageIcon(dimg);
+            this.profPicLabel = new JLabel(this.profPic);
+        } catch (IOException e) {
+
+        }
         this.getContentPane().removeAll();
         updatePanels();
-        this.profPic = new ImageIcon(profPic);
-        this.profPicLabel = new JLabel(this.profPic);
+        //this.profPic = new ImageIcon(profPic);
+        //this.profPicLabel = new JLabel(this.profPic);
 
         revalidate();
         repaint();
