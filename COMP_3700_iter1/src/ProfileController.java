@@ -1,7 +1,6 @@
 import javafx.stage.FileChooser;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -24,6 +23,7 @@ public class ProfileController implements ActionListener {
             int i = c.showOpenDialog(profileView);
             if (i == JFileChooser.APPROVE_OPTION) {
                 profileView.setProfPic(c.getSelectedFile().toString());
+                Application.getInstance().getDataAdapter().storeProfilePictureLink(c.getSelectedFile().toString(), Application.getInstance().getEmployee().getEmployeeID());
             }
         }
     }

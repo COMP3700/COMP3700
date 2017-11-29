@@ -20,7 +20,8 @@ public class LoginController implements ActionListener{
             this.loginView.dispose();
             Application.getInstance().getMainScreen().setTitle(emp.getName());
             Application.getInstance().getMainScreen().setVisible(true);
-
+            ProfileView profileView = new ProfileView();
+            profileView.loadProfPic(emp);
         }
     }
 }

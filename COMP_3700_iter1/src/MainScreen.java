@@ -64,38 +64,25 @@ public class MainScreen extends JFrame {
 
         btnManage.addActionListener(new ActionListener() { // when controller is simple, we can declare it on the fly
             public void actionPerformed(ActionEvent e) {
-                if (isManager == 1) {
                     Application.getInstance().getProductView().setVisible(true);
-                } else {
-                    JOptionPane.showMessageDialog(null, "Manager Option Only");
-                }
-
-
             }
         });
 
         btnLookupOrder.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                if (isManager == 1) {
                     Application.getInstance().getLookupView().setVisible(true);
-                } else {
-                    JOptionPane.showMessageDialog(null, "Manager Option Only");
-                }
             }
         });
 
         btnAddUser.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                if (isManager == 1) {
                     Application.getInstance().getAddUserView().setVisible(true);
-                } else {
-                    JOptionPane.showMessageDialog(null, "Manager Option Only");
-                }
             }
         });
 
         btnProfile.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                Application.getInstance().getProfileView().loadProfPic(Application.getInstance().getEmployee());
                 Application.getInstance().getProfileView().setVisible(true);
             }
         });

@@ -196,4 +196,42 @@ public class DataAdapter {
 
         return -1;
     }
+
+    public void storeProfilePictureLink(String picLink, int empID) {
+        try {
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM Employees WHERE EmployeeID = ?");
+            statement.setInt(1, empID);
+            ResultSet resultSet = statement.executeQuery();
+
+            if (resultSet.next()) {
+                statement = connection.prepareStatement("UPDATE Employees SET ProfilePicture = ? WHERE EmployeeID = ?");
+                statement.setString(1, picLink);
+                statement.setInt(2, empID);
+            } else {
+                JOptionPane.showMessageDialog(null, "Could not find employee");
+            }
+
+            statement.execute();
+            resultSet.close();
+            statement.close();
+        } catch (SQLException e) {
+
+        }
+
+    }
+
+    public String getProfilePictureLink(int empID) {
+        try {
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM Employees WHERE EmployeeID = ?");
+            statement.setInt(1, empID);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                return resultSet.getString(6);
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
+        return "";
+    }
 }

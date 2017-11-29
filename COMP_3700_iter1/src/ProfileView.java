@@ -13,6 +13,7 @@ public class ProfileView extends JFrame {
     private JButton btnUpdatePhoto = new JButton("Change Picture");
 
 
+
     BufferedImage profImg = null;
     private ImageIcon profPic = new ImageIcon();
     private JLabel profPicLabel = new JLabel(profPic);
@@ -20,10 +21,8 @@ public class ProfileView extends JFrame {
     public ProfileView() {
         this.setTitle("Profile");
         this.setLayout(new BoxLayout(this.getContentPane(), BoxLayout.PAGE_AXIS));
-        //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(500, 250);
         this.setLocation(300, 250);
-
         updatePanels();
     }
 
@@ -40,20 +39,18 @@ public class ProfileView extends JFrame {
     }
 
     public void setProfPic(String profPic) {
-
         try {
-            this.profImg = ImageIO.read(new File(profPic));
-            Image dimg = profImg.getScaledInstance(100,100, Image.SCALE_SMOOTH);
-            this.profPic = new ImageIcon(dimg);
-            this.profPicLabel = new JLabel(this.profPic);
+            if (profPic != null) {
+                this.profImg = ImageIO.read(new File(profPic));
+                Image dimg = profImg.getScaledInstance(100, 100, Image.SCALE_SMOOTH);
+                this.profPic = new ImageIcon(dimg);
+                this.profPicLabel = new JLabel(this.profPic);
+            }
         } catch (IOException e) {
-
+            System.out.println(e.getMessage());
         }
         this.getContentPane().removeAll();
         updatePanels();
-        //this.profPic = new ImageIcon(profPic);
-        //this.profPicLabel = new JLabel(this.profPic);
-
         revalidate();
         repaint();
     }
@@ -80,5 +77,9 @@ public class ProfileView extends JFrame {
         panelButton.add(btnUpdatePass);
         panelButton.add(btnUpdatePhoto);
         this.getContentPane().add(panelButton);
+    }
+
+    public void loadProfPic(Employee emp){
+        setProfPic(Application.getInstance().getDataAdapter().getProfilePictureLink(emp.getEmployeeID()));
     }
 }
