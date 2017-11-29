@@ -37,7 +37,6 @@ public class ProfileView extends JFrame {
         this.getContentPane().removeAll();
         updatePanels();
         this.profPic = new ImageIcon(profPic);
-        this.profPic.getScaledInst
         this.profPicLabel = new JLabel(this.profPic);
 
         revalidate();
