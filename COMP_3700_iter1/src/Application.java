@@ -20,6 +20,8 @@ public class Application {
 
     private DataAdapter dataAdapter;
 
+    private FileOpener fileOpener;
+
     private Employee employee;
 
     private int largestEmployeeID;
@@ -114,6 +116,10 @@ public class Application {
         return dataAdapter;
     }
 
+    public FileOpener getFileOpener() {
+        return fileOpener;
+    }
+
     public void setEmployee(Employee employee) {
         this.employee = employee;
     }
@@ -145,6 +151,8 @@ public class Application {
 
         // Create data adapter here!
         dataAdapter = new DataAdapter(connection);
+
+        fileOpener = new FileOpener();
 
         largestEmployeeID = dataAdapter.getLargestEmployeeID() + 1;
 
