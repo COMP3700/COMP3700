@@ -6,6 +6,7 @@ public class OrderView extends JFrame{
 
     private JButton btnCard = new JButton("Card");
     private JButton btnCash = new JButton("Cash");
+    private JButton btnReceipt = new JButton("Print Receipt");
     private JLabel totaltxt = new JLabel("0.00");
 
     ArrayList<JPanel> productList = new ArrayList<JPanel>();
@@ -28,6 +29,10 @@ public class OrderView extends JFrame{
         return btnCash;
     }
 
+    public JButton getBtnReceipt() {
+        return btnReceipt;
+    }
+
     public void AddPanels(ArrayList<JPanel> a, double total){
         this.getContentPane().removeAll();
         addDefaultPanels();
@@ -44,6 +49,7 @@ public class OrderView extends JFrame{
         JPanel panelButton = new JPanel();
         panelButton.add(btnCard);
         panelButton.add(btnCash);
+        panelButton.add(btnReceipt);
         this.getContentPane().add(panelButton);
         JPanel panelTotal = new JPanel();
         panelTotal.add(new JLabel("Total: $"));

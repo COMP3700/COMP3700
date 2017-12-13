@@ -1,3 +1,5 @@
+import javax.swing.*;
+import java.io.UnsupportedEncodingException;
 import java.sql.*;
 
 public class Application {
@@ -174,7 +176,11 @@ public class Application {
 
         //Controllers
 
-        orderController = new OrderController(orderView);
+        try {
+            orderController = new OrderController(orderView);
+        } catch (UnsupportedEncodingException e) {
+            JOptionPane.showMessageDialog(null, "Could not create order!");
+        }
 
         checkoutController = new CheckoutController(checkoutView, dataAdapter, orderController);
 

@@ -33,15 +33,6 @@ public class CheckoutController implements ActionListener {
             return;
         }
 
-//        double productPrice;
-//        try {
-//            productPrice = Double.parseDouble(checkoutView.getTxtProductPrice().getText());
-//        }
-//        catch (NumberFormatException e) {
-//            JOptionPane.showMessageDialog(null, "Invalid product price! Please provide a valid product price!");
-//            return;
-//        }
-
         int productQuantity;
         try {
             productQuantity = Integer.parseInt(checkoutView.getTxtProductQuantity().getText());
@@ -51,19 +42,10 @@ public class CheckoutController implements ActionListener {
             return;
         }
 
-//        String productName = checkoutView.getTxtProductName().getText().trim();
-//
-//        if (productName.length() == 0) {
-//            JOptionPane.showMessageDialog(null, "Invalid product name! Please provide a non-empty product name!");
-//            return;
-//        }
-
         // Done all validations! Make an object for this product!
 
         Product product = new Product();
         product.setID(productID);
-//        product.setName(productName);
-//        product.setPrice(productPrice);
         product.setQuantity(productQuantity);
 
         // Store the product to the database
@@ -125,7 +107,6 @@ public class CheckoutController implements ActionListener {
 
         checkoutView.getTxtProductName().setText(product.getName());
         checkoutView.getTxtProductPrice().setText(String.valueOf(product.getPrice()));
-//        checkoutView.getTxtProductQuantity().setText(String.valueOf(product.getQuantity()));
         itemsAdded++;
     }
 }

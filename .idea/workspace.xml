@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe6ecb76-8f87-4b56-9afa-d738e1ae613f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/DataAdapter.class" afterPath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/DataAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/LoginController.class" afterPath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/ProfileController.class" afterPath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/ProfileController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/ProfileView.class" afterPath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/ProfileView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/receipt.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/Application.class" afterPath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/Application.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/CheckoutController.class" afterPath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/CheckoutController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/OrderController.class" afterPath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/OrderController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/OrderView.class" afterPath="$PROJECT_DIR$/COMP_3700_iter1/out/production/COMP3700/OrderView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/src/DataAdapter.java" afterPath="$PROJECT_DIR$/COMP_3700_iter1/src/DataAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/src/LoginController.java" afterPath="$PROJECT_DIR$/COMP_3700_iter1/src/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/src/MainScreen.java" afterPath="$PROJECT_DIR$/COMP_3700_iter1/src/MainScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/src/ProfileController.java" afterPath="$PROJECT_DIR$/COMP_3700_iter1/src/ProfileController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/src/ProfileView.java" afterPath="$PROJECT_DIR$/COMP_3700_iter1/src/ProfileView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/src/Application.java" afterPath="$PROJECT_DIR$/COMP_3700_iter1/src/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/src/CheckoutController.java" afterPath="$PROJECT_DIR$/COMP_3700_iter1/src/CheckoutController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/src/OrderController.java" afterPath="$PROJECT_DIR$/COMP_3700_iter1/src/OrderController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP_3700_iter1/src/OrderView.java" afterPath="$PROJECT_DIR$/COMP_3700_iter1/src/OrderView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/store.db" afterPath="$PROJECT_DIR$/store.db" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,72 +23,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MainScreen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/MainScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="84" column="61" lean-forward="false" selection-start-line="84" selection-start-column="61" selection-end-line="84" selection-end-column="61" />
-              <folding>
-                <element signature="e#2644#2645#0" expanded="true" />
-                <element signature="e#2739#2740#0" expanded="true" />
-                <element signature="e#2873#2874#0" expanded="true" />
-                <element signature="e#2967#2968#0" expanded="true" />
-                <element signature="e#3097#3098#0" expanded="true" />
-                <element signature="e#3192#3193#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PaymentView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/PaymentView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfileView.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/ProfileView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="111" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+            <state relative-caret-position="-459">
+              <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+              <folding>
+                <element signature="e#2445#2446#0" expanded="true" />
+                <element signature="e#2478#2479#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="receipt.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/receipt.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/ProfileController.java">
+      <file leaf-file-name="ProfileView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/ProfileView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="46" column="7" lean-forward="false" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,14 +58,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileOpener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/FileOpener.java">
+      <file leaf-file-name="OrderView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/OrderView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-210">
+              <caret line="51" column="36" lean-forward="false" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,41 +71,12 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="172" column="38" lean-forward="false" selection-start-line="172" selection-start-column="38" selection-end-line="172" selection-end-column="38" />
-              <folding>
-                <element signature="e#2560#2561#0" expanded="true" />
-                <element signature="e#2593#2594#0" expanded="true" />
-                <element signature="method#updateLargestEmployeeID#0;class#Application#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/DataAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="206" column="120" lean-forward="true" selection-start-line="206" selection-start-column="120" selection-end-line="206" selection-end-column="120" />
+            <state relative-caret-position="-210">
+              <caret line="181" column="72" lean-forward="false" selection-start-line="181" selection-start-column="72" selection-end-line="181" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#loadProduct#0;class#DataAdapter#0" expanded="false" />
-                <element signature="method#saveProduct#0;class#DataAdapter#0" expanded="false" />
-                <element signature="method#saveOrder#0;class#DataAdapter#0" expanded="false" />
-                <element signature="method#loginUser#0;class#DataAdapter#0" expanded="false" />
-                <element signature="method#addUser#0;class#DataAdapter#0" expanded="false" />
-                <element signature="method#getLargestEmployeeID#0;class#DataAdapter#0" expanded="false" />
+                <element signature="method#updateLargestEmployeeID#0;class#Application#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/ProductController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1161">
-              <caret line="45" column="8" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="51" selection-end-column="9" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -178,13 +109,16 @@
         <option value="$PROJECT_DIR$/COMP_3700_iter1/src/AddUserController.java" />
         <option value="$PROJECT_DIR$/COMP_3700_iter1/src/FileOpenerView.java" />
         <option value="$PROJECT_DIR$/COMP_3700_iter1/src/FileOpener.java" />
-        <option value="$PROJECT_DIR$/COMP_3700_iter1/src/OrderController.java" />
         <option value="$PROJECT_DIR$/COMP_3700_iter1/src/DataAdapter.java" />
         <option value="$PROJECT_DIR$/COMP_3700_iter1/src/LoginController.java" />
-        <option value="$PROJECT_DIR$/COMP_3700_iter1/src/Application.java" />
         <option value="$PROJECT_DIR$/COMP_3700_iter1/src/ProfileController.java" />
         <option value="$PROJECT_DIR$/COMP_3700_iter1/src/MainScreen.java" />
         <option value="$PROJECT_DIR$/COMP_3700_iter1/src/ProfileView.java" />
+        <option value="$PROJECT_DIR$/COMP_3700_iter1/src/CheckoutController.java" />
+        <option value="$PROJECT_DIR$/COMP_3700_iter1/src/OrderView.java" />
+        <option value="$PROJECT_DIR$/COMP_3700_iter1/src/Application.java" />
+        <option value="$PROJECT_DIR$/receipt.txt" />
+        <option value="$PROJECT_DIR$/COMP_3700_iter1/src/OrderController.java" />
       </list>
     </option>
   </component>
@@ -208,10 +142,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,6 +167,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -372,7 +306,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -382,18 +315,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40292275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21614583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39624724" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39624724" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -420,16 +353,8 @@
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/COMP_3700_iter1/src/ProfileView.java</url>
-          <line>40</line>
-          <properties class="ProfileView" method="setProfPic">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="31" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -438,14 +363,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/DataAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -484,7 +401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="75" lean-forward="false" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -502,9 +418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -564,9 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -626,9 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -664,9 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -697,8 +601,7 @@
         <state relative-caret-position="1980">
           <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
           <folding>
-            <element signature="e#2560#2561#0" expanded="true" />
-            <element signature="e#2593#2594#0" expanded="true" />
+            <element signature="imports" expanded="true" />
             <element signature="method#updateLargestEmployeeID#0;class#Application#0" expanded="false" />
           </folding>
         </state>
@@ -751,7 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="75" lean-forward="false" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,9 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -777,9 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="10" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,21 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/CheckoutController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1134">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/CheckoutView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/FileOpener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
@@ -841,25 +722,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/OrderView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/DataAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="206" column="120" lean-forward="true" selection-start-line="206" selection-start-column="120" selection-end-line="206" selection-end-column="120" />
+        <state relative-caret-position="1485">
+          <caret line="206" column="120" lean-forward="false" selection-start-line="206" selection-start-column="120" selection-end-line="206" selection-end-column="120" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#loadProduct#0;class#DataAdapter#0" expanded="false" />
@@ -872,32 +738,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="172" column="38" lean-forward="false" selection-start-line="172" selection-start-column="38" selection-end-line="172" selection-end-column="38" />
-          <folding>
-            <element signature="e#2560#2561#0" expanded="true" />
-            <element signature="e#2593#2594#0" expanded="true" />
-            <element signature="method#updateLargestEmployeeID#0;class#Application#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="432">
           <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="111" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/ProfileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -906,7 +750,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/MainScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="0">
           <caret line="84" column="61" lean-forward="false" selection-start-line="84" selection-start-column="61" selection-end-line="84" selection-end-column="61" />
           <folding>
             <element signature="e#2644#2645#0" expanded="true" />
@@ -919,13 +763,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/ProfileView.java">
+    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/CheckoutController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        <state relative-caret-position="312">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/CheckoutView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="181" column="72" lean-forward="false" selection-start-line="181" selection-start-column="72" selection-end-line="181" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#updateLargestEmployeeID#0;class#Application#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/ProfileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/ProfileView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="46" column="7" lean-forward="false" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/OrderView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="51" column="36" lean-forward="false" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP_3700_iter1/src/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding>
+            <element signature="e#2445#2446#0" expanded="true" />
+            <element signature="e#2478#2479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receipt.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
